@@ -1,32 +1,31 @@
-# React + TypeScript + Vite
+# Daniel Amayaenvbo — Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A fast, accessible portfolio for Daniel Amayaenvbo, a Drexel Software Engineering student focused on reliable systems and applied ML.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 and TypeScript
+- Vite for development and production builds
+- Vanilla CSS with responsive layouts and reduced-motion support
+- GitHub Actions for build and lint validation
 
-## React Compiler
+## Local development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Quality checks
+
+```bash
+npm run lint
+npm run build
+```
+
+The site intentionally has no analytics, tracker, or client-side data collection.
+
+## Content
+
+Portfolio content is maintained in [`src/content.ts`](src/content.ts). Keep professional claims factual and link only to public work.
+
