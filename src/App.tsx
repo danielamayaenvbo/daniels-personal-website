@@ -1,6 +1,8 @@
 import { experience, projects, skills } from './content'
 import './App.css'
 
+const currentYear = new Date().getFullYear()
+
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>
 }
@@ -144,7 +146,7 @@ function App() {
       </main>
 
       <footer>
-        <p>© {new Date().getFullYear()} Daniel Amayaenvbo</p>
+        <p>© {currentYear} Daniel Amayaenvbo</p>
         <a href="https://www.linkedin.com/in/amayaenvbo" target="_blank" rel="noreferrer">
           LinkedIn <ArrowIcon />
         </a>
