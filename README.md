@@ -1,6 +1,6 @@
 # Daniel Amayaenvbo — Personal Website
 
-My personal website. I'm a Drexel Software Engineering student focused on reliable systems and applied ML.
+My personal website. I'm a fourth-year Drexel student double majoring in Software Engineering and AI & Machine Learning. I focus on reliable systems and applied ML.
 
 **Live:** https://danielamayaenvbo.github.io/daniels-personal-website/
 

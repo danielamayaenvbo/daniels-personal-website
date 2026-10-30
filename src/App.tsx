@@ -134,8 +134,8 @@ function App() {
             Building reliable systems for work that has <em>consequences.</em>
           </h1>
           <p className="hero-copy">
-            I'm Daniel Amayaenvbo, a third-year Software Engineering student at Drexel
-            University. I build services, developer tools, and applied ML systems with a focus
+            I'm Daniel Amayaenvbo, a fourth-year student at Drexel University double majoring
+            in Software Engineering and AI &amp; Machine Learning. I build services, developer tools, and applied ML systems with a focus
             on correctness, performance, and clear failure behavior.
           </p>
           <div className="hero-actions">

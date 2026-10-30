@@ -23,7 +23,7 @@ export const profile = {
 }
 
 export const highlights = [
-  { value: '3rd year', label: 'Software Engineering at Drexel' },
+  { value: '4th year', label: 'SWE + AI/ML double major at Drexel' },
   { value: '89%', label: 'mAP on campus-safety detection' },
   { value: '30%', label: 'Revenue lift supported at Starr Transit' },
 ]
