@@ -2,18 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Daniel Amayaenvbo — Software Engineer</title>
     <meta
       name="description"
-      content="Daniel Amayaenvbo is a software engineer building reliable systems and applied ML products."
+      content="Daniel Amayaenvbo is a Drexel Software Engineering student building reliable systems and applied ML products."
     />
+    <meta name="author" content="Daniel Amayaenvbo" />
+    <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131311" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Daniel Amayaenvbo — Software Engineer" />
     <meta
       property="og:description"
       content="Selected systems, applied ML work, and engineering experience."
     />
-    <title>Daniel Amayaenvbo — Software Engineer</title>
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      // Apply a saved theme before first paint to avoid a flash.
+      try {
+        const theme = localStorage.getItem('theme')
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme
+      } catch {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

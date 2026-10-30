@@ -7,7 +7,6 @@ type Experience = {
 }
 
 type Project = {
-  index: number
   name: string
   status: string
   summary: string
@@ -15,6 +14,19 @@ type Project = {
   href: string
   linkLabel: string
 }
+
+export const profile = {
+  name: 'Daniel Amayaenvbo',
+  email: 'doa29@drexel.edu',
+  github: 'https://github.com/danielamayaenvbo',
+  linkedin: 'https://www.linkedin.com/in/amayaenvbo',
+}
+
+export const highlights = [
+  { value: '3rd year', label: 'Software Engineering at Drexel' },
+  { value: '89%', label: 'mAP on campus-safety detection' },
+  { value: '30%', label: 'Revenue lift supported at Starr Transit' },
+]
 
 export const experience: Experience[] = [
   {
@@ -53,34 +65,40 @@ export const experience: Experience[] = [
 
 export const projects: Project[] = [
   {
-    index: 1,
     name: 'MCP Execution Ledger',
     status: 'In development',
     summary:
       'A durable tool-execution gateway for AI-assisted operations, designed around idempotency, policy checks, explicit state transitions, and replayable evaluation traces.',
     technologies: ['C#', '.NET', 'PostgreSQL', 'MCP', 'OpenTelemetry'],
     href: 'https://github.com/danielamayaenvbo',
-    linkLabel: 'View GitHub',
+    linkLabel: 'Follow on GitHub',
   },
   {
-    index: 2,
-    name: 'ProtégéAI',
-    status: 'Voice study engine',
+    name: 'Protégé',
+    status: 'Voice study tool',
     summary:
-      'A TypeScript and Node.js voice study engine built around structured output contracts, with zero-leakage test runs and fully valid schema output.',
-    technologies: ['TypeScript', 'Node.js', 'JSON Schema', 'Voice'],
-    href: 'https://github.com/danielamayaenvbo',
-    linkLabel: 'View GitHub',
+      'A browser-based study tool that listens while you teach and asks short clarifying questions, with live speech transcription, learner personas, LLM provider fallback, and offline evaluation.',
+    technologies: ['TypeScript', 'Next.js', 'Zod', 'SQLite', 'Playwright'],
+    href: 'https://github.com/danielamayaenvbo/protege',
+    linkLabel: 'View repository',
   },
   {
-    index: 3,
+    name: 'Fixed Income & Equity Market Monitor',
+    status: 'Full-stack data',
+    summary:
+      'A monitor for US Treasury yields and ETF market data, with PostgreSQL time-series storage, data-quality tracking, FastAPI analytics and streaming APIs, and a React dashboard.',
+    technologies: ['Python', 'FastAPI', 'PostgreSQL', 'React', 'Docker'],
+    href: 'https://github.com/danielamayaenvbo/fixed-income-equity-market-monitor',
+    linkLabel: 'View repository',
+  },
+  {
     name: 'Campus Safety CV Pipeline',
     status: 'Computer vision',
     summary:
-      'A YOLOv5 and OpenCV computer-vision pipeline for campus-safety detection, evaluated at 89% mean average precision.',
-    technologies: ['Python', 'PyTorch', 'YOLOv5', 'OpenCV'],
-    href: 'https://github.com/danielamayaenvbo',
-    linkLabel: 'View GitHub',
+      'Real-time campus-safety monitoring with YOLOv8 detection, restricted-zone alerts, and a logged analytics dashboard, evaluated at 89% mean average precision.',
+    technologies: ['Python', 'YOLOv8', 'OpenCV', 'Streamlit', 'SQLite'],
+    href: 'https://github.com/danielamayaenvbo/Computer-Vision-for-Campus-Safety',
+    linkLabel: 'View repository',
   },
 ]
 
@@ -91,7 +109,7 @@ export const skills = [
   },
   {
     label: 'Systems & cloud',
-    items: ['Docker', 'AWS', 'REST', 'MCP', 'GitHub Actions'],
+    items: ['Docker', 'AWS', 'PostgreSQL', 'REST', 'MCP', 'GitHub Actions'],
   },
   {
     label: 'ML & evaluation',
